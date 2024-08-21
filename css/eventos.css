@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #080409;
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
+/* ESTILIZAÇÃO DO CABEÇALHO */
+
+header{
+    height: 120px;
+}
+
+header img{
+  width: 300px; 
+  height: 150px; 
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    margin-left: 17%;
+    margin-right: 13%;
+}
+
+header nav .cabecalho li{
+    margin:  15px;
+    color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    margin: auto 30px;
+    margin-top: 5px;
+    align-items: center;
+    text-align: center;
+}
+
+.redes-sociais{
+    width: 500px;
+}
+
+.redes-sociais ul{
+    list-style: none;
+    display: flex;
+    width: 0;
+    margin: auto 250px;
+    margin-left: 100px;
+    margin-top: -25px;
+}
+
+.redes-sociais li{
+  height: 40px;
+  width: 80px;
+  padding: 10px;
+  background-color: rgba(226,50,43,0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.redes-sociais img{
+    width: 15px;
+    height: 15px;
+}
+
+.navbar{
+    width: 200px;
+    position: relative;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    margin-top: -60px;
+}
+
+/*--------------------------------------------------------------*/
+/*ESTILIZAÇÃO MAIN*/
+
+main{
+    margin-bottom: 100px;
+}
+
+.search{
+  margin: 8% 0% 0% 0%;
+}
+
+.navbar{
+  position: relative;
+}
+
+.carousel-item img{
+    height: 90vh;
+}
+
+.col-sm-6{
+    margin-left: 8%;
+}
+
+.card{
+    display: inline-flex;
+    position: relative;
+    margin: 5% 0 0 4.5%;
+}
+
+.card a{
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+/*--------------------------------------------------------*/
+/*ESTILIZAÇÃO DO RODAPE*/
+
+footer{
+    background-color: #E2322B;
+    padding: 50px 0;
+  }
+  .container-footer{
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+  }
+  .row-footer{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .footer-col{
+    width: 25%;
+    padding: 0 15px;
+  }
+  .footer-col h4{
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .footer-col ul{
+    list-style: none;
+  }
+  .footer-col ul li{
+    margin: 10px 0;
+  }
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #cecdcd;
+    padding-left: 10px;
+  }
+  .footer-col .medias-socias{
+    margin-top: 30px;
+  }
+  .footer-col .medias-socias a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+  }
+  .medias-socias{
+    display: none;
+  }
+  
+  .footer-col .medias-socias a:hover{
+    color: #E2322B;
+    background-color: white;
+  }
+  .footer-col .form-sub input{
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    background-color: #E2322B;
+  }
+  .footer-col .form-sub input::placeholder{
+    color: white;
+  }
+  .footer-col .form-sub button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px; 
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #E2322B;
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: white;        
+  }
+  
+  
+  /* Responsivo mobile*/
+  @media (max-width: 1500px) {
+  
+    .header-content{
+      margin-top: 50%;
+    }
+  
+    header img{
+      z-index: 9;
+      margin: 0 auto;
+      height: 130px;
+      width: 270px;
+    }
+  
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+  
+    .medias-socias{
+      display: flex;
+    }
+  
+    .medias-socias img{
+      width: 15px;
+      height: 15px;
+    }
+  
+    .redes-sociais{
+      display: none;
+    }
+  
+    .menu {
+      display: table-column-group;
+      position: absolute;
+      left: -17%;
+      top: -1%;
+      background-color: rgba(0, 0, 0, 0.999);
+      text-align: center;
+      width: 100%;
+      height: 0;
+      z-index: 1;
+      visibility: hidden;
+      overflow-y: hidden;
+      transition: 0.5s;
+    }
+  
+    .menu a {
+      position: relative;
+      top: 90px;
+      display: inline-flex;
+      border: 2px solid #fff;
+      padding: 10px;
+      margin: 20px;
+      left: -15px;
+      z-index: 9;
+      left: -15px;
+    }
+    .btn-menu {
+      background: none;
+      border: none;
+      font: inherit;
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      float: left;
+      position: absolute;
+      z-index: 9;
+      gap: 0.5rem;
+      color: #fff;
+      cursor: pointer;
+      top: 3%;
+    }
+    .hamburger {
+      border-top: 0.125rem solid;
+      width: 1.25rem;
+    }
+    .hamburger::after,
+    .hamburger::before {
+      content: " ";
+      display: block;
+      width: 1.25rem;
+      height: 0.125rem;
+      background: currentColor;
+      margin-top: 0.3125rem;
+      position: relative;
+      transition: 0.3s;
+    }
+  .navb.active .menu {
+      height: 60%;
+      visibility: visible;
+      overflow-y: auto;
+  }
+  .navb.active .hamburger {
+      border-top-color: transparent;
+  }
+  .navb.active .hamburger::before {
+      transform: rotate(135deg);
+  }
+  .navb.active .hamburger::after {
+      transform: rotate(-135deg);
+      top: -0.4375rem;
+  }
+  }
+  @media (max-width:600px) {
+    .footer-col{
+        width: 100%;
+    }
+  }
+  
+  @media(min-width: 912px) and ( max-width: 1280px) {
+    header nav img{
+      width: 300px;
+      height: 170px;
+    }
+  }
